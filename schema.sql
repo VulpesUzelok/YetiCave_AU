@@ -65,5 +65,5 @@ ALTER TABLE `Lots`
 ADD CONSTRAINT Lots_fk4 FOREIGN KEY (lot_win_id) REFERENCES Users(user_id);
 
 --//Создание связей для таблицы Cтавки(Rates)\\--
-ALTER TABLE `rates` 
+ALTER TABLE `Rates` 
 ADD CONSTRAINT Rates_fk1 FOREIGN KEY (user_id) REFERENCES Users(user_id);
