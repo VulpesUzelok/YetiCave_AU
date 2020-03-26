@@ -1,16 +1,16 @@
 <?php
 $is_auth = rand(0, 1);
-$user_name = 'Uzlova_Julia'; // óêàæèòå çäåñü âàøå èìÿ
+$user_name = 'Uzlova_Julia'; // ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð·Ð´ÐµÑÑŒ Ð²Ð°ÑˆÐµ Ð¸Ð¼Ñ
 $categori_mass = array(
-"boards"=>"Äîñêè è ëûæè","attachment"=>"Êðåïëåíèÿ", "boots"=>"Áîòèíêè", 
-"clothing"=>"Îäåæäà", "tools"=>"Èíñòðóìåíòû", "other"=>"Ðàçíîå");
+"boards"=>"Ð”Ð¾ÑÐºÐ¸ Ð¸ Ð»Ñ‹Ð¶Ð¸","attachment"=>"ÐšÑ€ÐµÐ¿Ð»ÐµÐ½Ð¸Ñ", "boots"=>"Ð‘Ð¾Ñ‚Ð¸Ð½ÐºÐ¸", 
+"clothing"=>"ÐžÐ´ÐµÐ¶Ð´Ð°", "tools"=>"Ð˜Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ñ‹", "other"=>"Ð Ð°Ð·Ð½Ð¾Ðµ");
 $items_massive = array(
-    array("LotName" => "2014 Rossignol District Snowboard", "LotCategori" => "Äîñêè è ëûæè", "LoTPrice" => 10999, "LotImage" => "img/lot-1.jpg"), 
-    array("LotName" => "DC Ply Mens 2016/2017 Snowboard", "LotCategori" => "Äîñêè è ëûæè", "LoTPrice" => 159999, "LotImage" => "img/lot-2.jpg"),
-    array("LotName" => "Êðåïëåíèÿ Union Contact Pro 2015 ãîäà ðàçìåð L/XL", "LotCategori" => "Êðåïëåíèÿ", "LoTPrice" => 8000, "LotImage" => "img/lot-3.jpg"),
-    array("LotName" => "Áîòèíêè äëÿ ñíîóáîðäà DC Mutiny Charocal", "LotCategori" =>  "Áîòèíêè", "LoTPrice" => 10999, "LotImage" => "img/lot-4.jpg"),
-    array("LotName" => "Êóðòêà äëÿ ñíîóáîðäà DC Mutiny Charocal", "LotCategori" =>   "Îäåæäà", "LoTPrice" => 7500, "LotImage" => "img/lot-5.jpg"),
-    array("LotName" => "Ìàñêà Oakley Canopy", "LotCategori" =>"Ðàçíîå", "LoTPrice" => 5400, "LotImage" => "img/lot-6.jpg")
+    array("LotName" => "2014 Rossignol District Snowboard", "LotCategori" => "Ð”Ð¾ÑÐºÐ¸ Ð¸ Ð»Ñ‹Ð¶Ð¸", "LoTPrice" => 10999, "LotImage" => "img/lot-1.jpg"), 
+    array("LotName" => "DC Ply Mens 2016/2017 Snowboard", "LotCategori" => "Ð”Ð¾ÑÐºÐ¸ Ð¸ Ð»Ñ‹Ð¶Ð¸", "LoTPrice" => 159999, "LotImage" => "img/lot-2.jpg"),
+    array("LotName" => "ÐšÑ€ÐµÐ¿Ð»ÐµÐ½Ð¸Ñ Union Contact Pro 2015 Ð³Ð¾Ð´Ð° Ñ€Ð°Ð·Ð¼ÐµÑ€ L/XL", "LotCategori" => "ÐšÑ€ÐµÐ¿Ð»ÐµÐ½Ð¸Ñ", "LoTPrice" => 8000, "LotImage" => "img/lot-3.jpg"),
+    array("LotName" => "Ð‘Ð¾Ñ‚Ð¸Ð½ÐºÐ¸ Ð´Ð»Ñ ÑÐ½Ð¾ÑƒÐ±Ð¾Ñ€Ð´Ð° DC Mutiny Charocal", "LotCategori" =>  "Ð‘Ð¾Ñ‚Ð¸Ð½ÐºÐ¸", "LoTPrice" => 10999, "LotImage" => "img/lot-4.jpg"),
+    array("LotName" => "ÐšÑƒÑ€Ñ‚ÐºÐ° Ð´Ð»Ñ ÑÐ½Ð¾ÑƒÐ±Ð¾Ñ€Ð´Ð° DC Mutiny Charocal", "LotCategori" =>   "ÐžÐ´ÐµÐ¶Ð´Ð°", "LoTPrice" => 7500, "LotImage" => "img/lot-5.jpg"),
+    array("LotName" => "ÐœÐ°ÑÐºÐ° Oakley Canopy", "LotCategori" =>"Ð Ð°Ð·Ð½Ð¾Ðµ", "LoTPrice" => 5400, "LotImage" => "img/lot-6.jpg")
 );
 function num_formation($num,$ruble)
 {
@@ -21,7 +21,7 @@ function num_formation($num,$ruble)
         $z = number_format($num,0,""," ");
 
     if($ruble==true)
-         $z .='<b class="rub">ð</b>';
+         $z .='<b class="rub">Ñ€</b>';
 
         return $z;
 }   
