@@ -52,9 +52,9 @@ SELECT cat_name
 FROM Cats
 
 SELECT DISTINCT lot_name, lot_start_price, lot_image, MAX(rates_price) as 'Маскимальная ставка', count(c.rate_id) as 'Количество ставок', categ_name 
-FROM Cats a inner join lots b on cat_id=lot_cat_id inner join 
+FROM Cats a left join lots b on cat_id=lot_cat_id left join 
 rates c on b.lot_id=c.lot_id
-WHERE CURDATE()<lot_comp_date
+WHERE "2020-01-01 15:15:15"<lot_comp_date
 group by lot_name
 ORDER BY  lot_cr_date DESC
 SELECT lot_name, cat_name 
