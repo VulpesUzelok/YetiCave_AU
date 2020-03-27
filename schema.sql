@@ -1,5 +1,5 @@
 
---//Создание категорий\\-- 
+--//Создание категорий (Cats)\\-- 
 CREATE TABLE Cats(
 cat_id int,
 cat_name varchar(50),
